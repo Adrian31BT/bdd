@@ -6,3 +6,23 @@ create table videojuegos(
 	valoracion int not null,
 	constraint videojuegos_pk primary key (codigo)
 )
+
+insert into videojuegos (codigo, nombre, descripcion, valoracion) 
+values (10101, 'Call Of Duty', 'Accion, guerra', 5)
+insert into videojuegos (codigo, nombre, descripcion, valoracion) 
+values (10102, 'Spiderman 4', 'Accion, aventura', 4)
+insert into videojuegos (codigo, nombre, descripcion, valoracion) 
+values (10103, 'Super Mario', 'Aventura, ficcion', 5)
+insert into videojuegos (codigo, nombre, descripcion, valoracion) 
+values (10104, 'GTA 5', 'Accion, campaña', 5)
+insert into videojuegos (codigo, nombre, descripcion, valoracion) 
+values (10105, 'WWZ', 'Accion, zombies', 5)
+
+insert into videojuegos (codigo, nombre, valoracion) 
+values (10106, 'Avenger', 3)
+insert into videojuegos (codigo, nombre, valoracion) 
+values (10107, 'FIFA 25', 5)
+insert into videojuegos (codigo, nombre, valoracion) 
+values (10108, 'WWE 5K 2024', 5)
+
+select * from videojuegos
