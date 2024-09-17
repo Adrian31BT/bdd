@@ -27,3 +27,11 @@ insert into productos (codigo, nombre, precio, stock)
 values (8, 'Luces LED', 35.90, 7)
 
 select * from productos
+
+--Reto 4
+--1
+select * from productos where nombre like 'Q%'
+--2
+select * from productos where descripcion is null
+--3
+select * from productos where precio between '2' and '3'

@@ -29,3 +29,10 @@ insert into registros_entradas (codigo_registro, cedula_empleado, fecha, hora)
 values (10101, '2214122422', '19/12/2023', '18:40')
 
 select * from registros_entradas
+
+--1
+select cedula_empleado, fecha, hora from registros_entradas
+--2
+select * from registros_entradas where hora between '07:00' and '14:00'
+--3
+select * from registros_entradas where hora > '08:00'

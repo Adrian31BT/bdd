@@ -26,3 +26,10 @@ insert into videojuegos (codigo, nombre, valoracion)
 values (10108, 'WWE 5K 2024', 5)
 
 select * from videojuegos
+
+--1
+select * from videojuegos where nombre like 'C%'
+--2
+select * from videojuegos where valoracion between 9 and 10
+--4
+select * from videojuegos where descripcion is null

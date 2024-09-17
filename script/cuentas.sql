@@ -29,3 +29,10 @@ insert into cuentas (numero_cuenta, cedula_propietario, fecha_creacion, saldo)
 values (87586, '03412', '12/07/2024', 700)
 
 select * from cuentas
+
+--1
+select numero_cuenta, saldo from cuentas
+--2
+select * from cuentas where fecha_creacion between '01/07/2024' and '16/09/2024'
+--3
+select numero_cuenta, saldo from cuentas where fecha_creacion between '01/07/2024' and '16/09/2024'

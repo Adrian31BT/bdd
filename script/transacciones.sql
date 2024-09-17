@@ -31,3 +31,10 @@ insert into transacciones (codigo, numero_cuenta, monto, tipo, fecha, hora)
 values (10110, '67566', 1986.40, 'D', '01/01/2023', '11:00')
 
 select * from transacciones
+
+--1
+select * from transacciones where tipo = 'D'
+--2
+select * from transacciones where monto >= money(200) and monto <= money(2000)
+--3
+select codigo, monto, tipo, fecha from transacciones where fecha is not null
