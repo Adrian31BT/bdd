@@ -37,7 +37,7 @@ select nombre from estudiantes where cedula like '17%'
 select nombre, apellido from estudiantes where nombre like 'A%'
 
 --Reto 5
-update estudiantes set nombre = 'Hernandez' where cedula like '17%'
+update estudiantes set apellido = 'Hernandez' where cedula like '17%'
 
 --Reto 6
 delete from estudiantes where cedula like '%05'
