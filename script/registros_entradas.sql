@@ -36,3 +36,6 @@ select cedula_empleado, fecha, hora from registros_entradas
 select * from registros_entradas where hora between '07:00' and '14:00'
 --3
 select * from registros_entradas where hora > '08:00'
+
+--Reto 5
+update registros_entradas set cedula_empleado = '082345679' where to_char(fecha, 'MM') =  '08'

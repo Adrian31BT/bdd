@@ -35,3 +35,6 @@ select * from productos where nombre like 'Q%'
 select * from productos where descripcion is null
 --3
 select * from productos where precio between '2' and '3'
+
+--Reto 5
+update productos set stock = 0 where descripcion is null
