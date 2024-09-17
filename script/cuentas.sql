@@ -39,3 +39,6 @@ select numero_cuenta, saldo from cuentas where fecha_creacion between '01/07/202
 
 --Reto 5
 update cuentas set saldo = 10 where cedula_propietario like '17%'
+
+--Reto 6
+delete from cuentas where cedula_propietario like '10%'

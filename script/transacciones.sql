@@ -40,4 +40,7 @@ select * from transacciones where monto >= money(200) and monto <= money(2000)
 select codigo, monto, tipo, fecha from transacciones where fecha is not null
 
 --Reto 5
-update transacciones set tipo = 'T' where (monto > money(100) and monto < money(500)) and (to_char(fecha, 'MM') =  '09') and (hora between '14:00' and '20:00')  
+update transacciones set tipo = 'T' where (monto > money(100) and monto < money(500)) and (to_char(fecha, 'MM') =  '09') and (hora between '14:00' and '20:00') 
+
+--Reto 6
+delete from transacciones where (hora between '14:00' and '18:00') and (to_char(fecha, 'MM') =  '08')

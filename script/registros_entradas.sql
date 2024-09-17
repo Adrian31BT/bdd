@@ -39,3 +39,6 @@ select * from registros_entradas where hora > '08:00'
 
 --Reto 5
 update registros_entradas set cedula_empleado = '082345679' where to_char(fecha, 'MM') =  '08'
+
+--Reto 6
+delete from registros_entradas where to_char(fecha, 'MM') =  '06'
